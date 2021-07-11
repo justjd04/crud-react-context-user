@@ -71,3 +71,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Publish
+
+npm install gh-pages --save-dev
+
+Add in package.json
+
+“homepage”: “https://{Github-username}.github.io/{Github-repo-name}"
+
+“scripts”: {
+//…
+“predeploy”: “npm run build”,
+“deploy”: “gh-pages -d build”
+}
+
+git remote add origin your-github-repository-url.git
+
+npm run deploy
+
+Go to {your-GitHub-code-repository} -> settings -> GitHub pages section and setup source to the gh-pages branch.
+
