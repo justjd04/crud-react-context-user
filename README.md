@@ -95,3 +95,10 @@ npm run deploy
 
 Go to {your-GitHub-code-repository} -> settings -> GitHub pages section and setup source to the gh-pages branch.
 
+If error with React router:
+
+change:
+
+"homepage": "https://justjd04.github.io/",
+
+npm run deploy
