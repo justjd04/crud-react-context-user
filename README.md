@@ -82,8 +82,11 @@ Add in package.json
 
 “scripts”: {
 //…
+
 “predeploy”: “npm run build”,
+
 “deploy”: “gh-pages -d build”
+
 }
 
 git remote add origin your-github-repository-url.git
