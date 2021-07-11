@@ -74,31 +74,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Publish
 
-npm install gh-pages --save-dev
-
 Add in package.json
 
-“homepage”: “https://{Github-username}.github.io/{Github-repo-name}"
+"homepage": "https://{Github-username}.github.io/{Github-repo-name}",
 
-“scripts”: {
+"scripts": {
 //…
 
-“predeploy”: “npm run build”,
-
-“deploy”: “gh-pages -d build”
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
 
 }
 
 git remote add origin your-github-repository-url.git
 
+npm install gh-pages --save-dev
+
 npm run deploy
 
 Go to {your-GitHub-code-repository} -> settings -> GitHub pages section and setup source to the gh-pages branch.
 
-If error with React router:
+
+Error with React router:
 
 <BrowserRouter basename={process.env.PUBLIC_URL}>
 </BrowserRouter>
+
+or <Route path={process.env.PUBLIC_URL + '/'}>
 
 or change:
 
