@@ -97,7 +97,10 @@ Go to {your-GitHub-code-repository} -> settings -> GitHub pages section and setu
 
 If error with React router:
 
-change:
+<BrowserRouter basename={process.env.PUBLIC_URL}>
+</BrowserRouter>
+
+or change:
 
 "homepage": "https://justjd04.github.io/",
 
